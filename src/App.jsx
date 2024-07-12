@@ -8,8 +8,8 @@ function App() {
     element.style.top = '30%';
     element.style.left = '50%';
     element.style.transform = 'translate(-50%, -50%)';
-    element.style.fontSize = '2rem';
-    element.style.color = 'red';
+    element.style.fontSize = '3rem';
+    element.style.color = 'white';
     element.style.opacity = '1';
     element.style.transition = 'all 0.6s';
     element.style.cursor = 'default';
@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <div className={'w-full max-w-[270px] h-full flex flex-col items-center justify-center mx-auto relative'}>
+    <div className={'w-full h-screen flex flex-col items-center justify-center mx-auto relative'}>
       <img
         className={'object-cover w-full h-full'}
         src='/game-bg.jpg'
@@ -33,7 +33,7 @@ function App() {
       />
       <button
         onClick={handleClick}
-        className={'absolute left-1/2 transform -translate-x-1/2 bottom-28 text-2xl text-red-500 font-bold w-full max-w-16 h-full max-h-16 rounded-full hover:bg-blue-300 hover:bg-opacity-20'}>
+        className={'absolute left-1/2 transform -translate-x-1/2 bottom-60 text-2xl text-red-500 font-bold w-full max-w-16 h-full max-h-16 rounded-full hover:bg-blue-300 hover:bg-opacity-20'}>
         Click
       </button>
       <ul className={'absolute bottom-0 flex items-center justify-between w-full text-center'}>
